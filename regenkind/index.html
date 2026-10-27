@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090f19">
+  <meta name="description" content="《苍寰：维拉之梦》人物档案">
+  <title>苍寰｜维拉之梦</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="返回人物首页"><span class="brand-mark">苍寰</span><span>维拉之梦</span></a>
+    <div class="counter" aria-live="polite"><span id="currentNo">01</span><i></i><span>16</span></div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="characterName">
+      <div class="atmosphere" aria-hidden="true"></div>
+      <div class="portrait-wrap">
+        <img id="portrait" class="portrait" alt="" fetchpriority="high">
+        <div class="image-note">正式人物设定参考图 · 网站统一取景版</div>
+      </div>
+      <div class="hero-copy">
+        <p id="indexLabel" class="eyebrow">CHARACTER ARCHIVE · 01</p>
+        <h1 id="characterName"></h1>
+        <p id="englishName" class="english-name"></p>
+        <p id="roleLine" class="role-line"></p>
+        <div class="controls" aria-label="切换人物">
+          <button id="prevBtn" class="nav-btn" aria-label="上一位人物">←</button>
+          <button id="nextBtn" class="nav-btn" aria-label="下一位人物">→</button>
+          <span class="hint">左右切换 · 下滑阅读档案</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#profile"><span>查看档案</span><b>↓</b></a>
+    </section>
+
+    <section id="profile" class="profile-section">
+      <div class="section-label">PERSONNEL FILE</div>
+      <div class="profile-grid">
+        <article class="profile-copy">
+          <h2>人物简介</h2>
+          <p id="bio"></p>
+          <blockquote id="quote"></blockquote>
+        </article>
+        <aside class="facts" aria-label="人物详细信息">
+          <div><span>身份</span><strong id="identity"></strong></div>
+          <div><span>阵营</span><strong id="faction"></strong></div>
+          <div><span>年龄</span><strong id="age"></strong></div>
+          <div><span>战斗定位</span><strong id="combat"></strong></div>
+        </aside>
+      </div>
+      <nav class="roster" aria-label="全部人物" id="roster"></nav>
+      <p class="editorial-note">本页采用现阶段公开展示口径。人物设定与视觉资产仍会随项目开发继续修订。</p>
+    </section>
+  </main>
+
+  <footer><span>© EaCheer Games</span><span>CANGHUAN · VILA DREAM</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
+
